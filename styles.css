@@ -1,0 +1,172 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute; 
+    bottom: 40px; 
+    align-self: center;
+    background-color: rgba(255,255,255, 40%);
+    width: 70%;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+html, body{
+    height:100%;
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    background:linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)); 
+    font-family: 'Kumbh Sans', sans-serif;
+    margin:0px;
+}
+
+.container{ 
+    display:flex; 
+    background-color:white; 
+    border:hidden; 
+    border-radius:36px; 
+    align-self: center; 
+    min-width: 1000px; 
+    max-width: 1000px; 
+    min-height: 410px; 
+    max-height: 410px; 
+    position: absolute; 
+    top: 130px; 
+    padding: 50px 0px; 
+    overflow: hidden;
+}
+
+.images{
+    position:relative;
+}
+
+.bg-pattern-desktop {
+    position:absolute; 
+    left: -580px; 
+    top: -360px;
+}
+
+.bg-pattern-mobile{
+    display:none;
+}
+
+.faq-section {
+    display: flex; 
+    flex-direction: column; 
+    align-content: right; 
+    padding: 0px 50px;
+    
+}
+
+.woman-desktop { 
+    position: relative; 
+    left: -85px;
+}
+
+.woman-mobile{
+    display:none;
+}
+
+.box {
+    position: absolute; 
+    top: 320px; 
+    z-index: 1;
+}
+
+.faq-box{
+    padding: 20px 0px; 
+    border-bottom: grey solid 1px; 
+    color: hsl(237, 12%, 33%); 
+    width:400px;
+}
+
+.question{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.arrow{
+    margin-left:50px;
+}
+
+.question:hover{
+  color:hsl(14, 88%, 65%);
+}
+
+.answer{
+    display: none; 
+    height: 40px; 
+    transition: 0.4s ease-out;
+}
+
+.a-active{
+    display: initial;  
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width: 375px){
+    h1{
+        margin:15px auto;
+    }
+    .box{
+        display: none;
+    }
+
+    .woman-desktop{
+        display:none;
+    }
+
+    .woman-mobile{
+        display:initial;
+        position:absolute;
+        left:30px;
+        top: -160px;
+    }
+
+    .bg-pattern-desktop{
+        display:none;
+    }
+
+    .bg-pattern-mobile{
+        display:initial;
+        position:absolute;
+        left:55px;
+        top: -60px;
+    }
+
+    .container{
+        min-width:340px;
+        max-width:340px;
+        max-height: 430px;
+        flex-direction: column;
+        align-content: center;
+        overflow: visible;
+    }
+
+    .faq-section{
+        padding: 50px 20px;
+        align-content: center;
+        font-size: 12px;
+    }
+
+    .faq-box{
+        margin-top: 5px;
+        width:auto;       
+    }
+
+    .attribution {  
+        bottom: 10px
+    }
+    .question:hover{
+        color:black;
+      }
+    .arrow{
+        margin-left: 10px;
+    }
+}
